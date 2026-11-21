@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jaewon Hyun’s electrical and electronic engineering portfolio, featuring resolver angle decoding research, digital logic, and embedded systems projects.">
+  <meta name="theme-color" content="#f8f7fc">
+  <title>Jaewon Hyun | Engineering Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="projects.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Jaewon Hyun, home">
+        <span class="monogram" aria-hidden="true">JH</span>
+        <span>Jaewon Hyun</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero container" aria-labelledby="portfolio-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Electrical &amp; electronic engineering</p>
+        <h1 id="portfolio-title">Jaewon <span>Hyun</span></h1>
+        <p class="intro">I’m an engineering student at the University of Nottingham Ningbo China, interested in digital IC design, FPGA-based digital systems, and embedded systems.</p>
+        <div class="hero-links">
+          <a class="button" href="#research">Explore my work</a>
+          <a class="text-link" href="#education">View education</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="assets/chip.jpg" width="1254" height="1254" alt="Illustration of an integrated circuit on a circuit board, lit in violet">
+        <figcaption>Integrated circuit · AI-generated illustration</figcaption>
+      </figure>
+    </section>
+
+    <section class="section research-section" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <header class="section-heading">
+          <p class="eyebrow">Final-year project</p>
+          <h2 id="research-title">Hardware‑Efficient Resolver Angle Decoding</h2>
+        </header>
+        <div class="research-grid">
+          <div class="research-copy">
+            <p class="meta"><time datetime="2026-09">Sep 2026</time> – Present <span aria-hidden="true">·</span> Supervisor Dr. Jing Li</p>
+            <p>A resolver produces sine and cosine signals that encode shaft angle. My project compares ways to recover that angle efficiently for a digital hardware implementation.</p>
+            <p>I’m developing MATLAB decoders and comparing their floating-point and fixed-point implementations for angle accuracy, numerical precision, and implementation complexity. The next step is to implement and validate the selected method on an FPGA.</p>
+          </div>
+          <div class="methods">
+            <h3>Methods under evaluation</h3>
+            <ul>
+              <li>CORDIC</li>
+              <li>Lookup table (LUT)</li>
+              <li>Rational approximation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <header class="section-heading">
+        <h2 id="projects-title">Technical projects</h2>
+      </header>
+      <div class="project-filters" role="group" aria-label="Filter projects by topic" hidden>
+        <button type="button" aria-pressed="true" data-filter="all">All projects</button>
+        <button type="button" aria-pressed="false" data-filter="digital">Digital logic</button>
+        <button type="button" aria-pressed="false" data-filter="embedded">Embedded systems</button>
+        <button type="button" aria-pressed="false" data-filter="power">Power electronics</button>
+      </div>
+      <p class="visually-hidden" id="filter-status" role="status"></p>
+      <div class="project-grid" id="project-list">
+        <article class="project" data-topic="power">
+          <p class="project-topic">Power electronics</p>
+          <h3>Forward Converter SMPS Design and Experimental Verification</h3>
+          <p class="meta">Energy Conditioning Group Project <span aria-hidden="true">·</span> <time datetime="2026-02">Feb</time> – <time datetime="2026-05">May 2026</time></p>
+          <p>Contributed to the design, KiCad PCB layout, and testing of a 50 W, 100 kHz two-switch forward converter. Simulated ideal and non-ideal behavior in PLECS and evaluated Type I and Type III closed-loop control.</p>
+        </article>
+        <article class="project" data-topic="digital embedded">
+          <p class="project-topic">Digital logic <span aria-hidden="true">·</span> Embedded systems</p>
+          <h3>Doppler Radar Speed Detector with CPLD-Based Digital Display</h3>
+          <p class="meta">Electronic Systems Group Design Project <span aria-hidden="true">·</span> <time datetime="2025-09">Sep</time> – <time datetime="2025-12">Dec 2025</time></p>
+          <p>Implemented and simulated Verilog logic for a Xilinx CPLD, including BCD-to-7-segment decoding, clock division, shift registers, and UART decoding. Verified the two-digit display in hardware and helped integrate radar signal conditioning, STM32 frequency measurement, and the CPLD display.</p>
+        </article>
+        <article class="project" data-topic="digital">
+          <p class="project-topic">Digital logic</p>
+          <h3>FSM Sequence Detector Design</h3>
+          <p class="meta">Electronic Processing and Communications <span aria-hidden="true">·</span> <time datetime="2025-12">Dec 2025</time></p>
+          <p>Designed Moore and Mealy sequence detectors using state diagrams, Karnaugh maps, and D flip-flops. Verified gate-level circuits in LTspice and analyzed propagation delays and the minimum clock period.</p>
+        </article>
+        <article class="project" data-topic="embedded">
+          <p class="project-topic">Embedded systems</p>
+          <h3>Raspberry Pi Camera-Based Autonomous Vehicle and Line Follower</h3>
+          <p class="meta">Applied Electrical and Electronic Engineering Construction Project <span aria-hidden="true">·</span> <time datetime="2024-09">Sep 2024</time> – <time datetime="2025-05">May 2025</time></p>
+          <p>Integrated Arduino and Raspberry Pi controllers, motor drivers, and sensors. Implemented sensor-based line following, PID control, and OpenCV-based visual recognition.</p>
+        </article>
+        <article class="project" data-topic="digital">
+          <p class="project-topic">Digital logic</p>
+          <h3>Digital Logic-Based Industrial Control System</h3>
+          <p class="meta">Information and Systems <span aria-hidden="true">·</span> <time datetime="2025-03">Mar 2025</time></p>
+          <p>Designed combinational and sequential logic for sensor processing, fault detection, and motor control in Logisim. Implemented and simulated flip-flop-based control logic, a synchronous counter, and a 7-segment decoder.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-heading">
+          <h2 id="skills-title">Technical skills</h2>
+        </header>
+        <dl class="skills-grid">
+          <div><dt>Programming &amp; HDL</dt><dd>C, C++, MATLAB, Verilog HDL, PIC18 Assembly</dd></div>
+          <div><dt>Design &amp; simulation tools</dt><dd>Xilinx ISE/ISim, MPLAB IDE, LTspice, Logisim, PLECS, KiCad, OpenCV</dd></div>
+          <div><dt>Hardware &amp; embedded systems</dt><dd>CPLD, STM32, Arduino, Raspberry Pi, PCB assembly, UART/RS485, I²C, GPIO</dd></div>
+          <div><dt>Laboratory skills</dt><dd>Oscilloscope, signal generator, multimeter, soldering</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <header class="section-heading">
+        <h2 id="about-title">Education &amp; activities</h2>
+      </header>
+      <div class="about-grid">
+        <div class="education-column">
+          <article class="education" id="education" aria-labelledby="education-title">
+            <h3 id="education-title">University of Nottingham Ningbo China</h3>
+            <p>BEng (Hons) in Electrical and Electronic Engineering</p>
+            <p class="meta"><time datetime="2021-09">Sep 2021</time> – Present <span aria-hidden="true">·</span> Expected graduation <time datetime="2027-07">July 2027</time></p>
+            <p class="meta">Leave of absence for mandatory military service, <time datetime="2022-09">Sep 2022</time> – <time datetime="2024-09">Sep 2024</time></p>
+          </article>
+          <div class="background-group">
+            <h3>Honors &amp; awards</h3>
+            <ul class="record-list">
+              <li><strong>Zhejiang Government Scholarship for International Students</strong><span><time datetime="2025">2025</time></span></li>
+              <li><strong>Nottingham Global Full Scholarship</strong><span><time datetime="2021">2021</time></span></li>
+            </ul>
+          </div>
+          <div class="background-group">
+            <h3>Additional training</h3>
+            <ul class="record-list">
+              <li>
+                <strong>Introduction to Very Large Scale Integration</strong>
+                <span>NeoScholar online course <span aria-hidden="true">·</span> <time datetime="2024-10">Oct 2024</time> – <time datetime="2025-01">Jan 2025</time></span>
+                <p>Instructor Prof. Ya-Hong Xie (UCLA)</p>
+              </li>
+            </ul>
+          </div>
+          <div class="background-group">
+            <h3>Languages</h3>
+            <p>Korean (native), English, Chinese (basic)</p>
+          </div>
+        </div>
+        <div class="activities">
+          <h3>Leadership &amp; activities</h3>
+          <ul class="record-list">
+            <li>
+              <strong>Engineering Student Representative</strong>
+              <span>Learning Community Forum <span aria-hidden="true">·</span> <time datetime="2025-09">Sep 2025</time> – <time datetime="2026-05">May 2026</time></span>
+              <p>Collected academic feedback from EEE students and communicated their concerns and suggestions to faculty.</p>
+            </li>
+            <li>
+              <strong>Teaching Assistant</strong>
+              <span>Korean Corner <span aria-hidden="true">·</span> <time datetime="2024">2024</time>, <time datetime="2025">2025</time></span>
+              <p>Supported Korean language learning and cultural exchange activities for university students.</p>
+            </li>
+            <li>
+              <strong>Sustainability Modules</strong>
+              <span>Nottingham Advantage Award Program <span aria-hidden="true">·</span> <time datetime="2024-09">Sep 2024</time> – <time datetime="2025-05">May 2025</time></span>
+              <p>Completed two modules and participated in seminars and campus sustainability project activities.</p>
+            </li>
+            <li>
+              <strong>Member</strong>
+              <span>Science and Engineering Student Association (SESA) <span aria-hidden="true">·</span> Fall <time datetime="2021">2021</time></span>
+              <p>Supported online meetings and translation tasks and helped plan a soldering workshop.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-name">Jaewon Hyun</p>
+        <p class="meta">Version 1 · AI-generated coursework</p>
+      </div>
+      <a class="text-link" href="#top">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
